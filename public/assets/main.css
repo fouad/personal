@@ -139,3 +139,63 @@ body {
   border-color: white;
   background: white;
 }
+
+.tablight-background {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: 'Open Sans';
+  background: #448AFF;
+}
+
+.tablight-promo {
+  padding-top: 15%;
+  text-align: center;
+}
+
+.tablight-promo h1,
+.tablight-promo h4 {
+  font-weight: 400;
+  margin: 30px 0 10px;
+}
+
+.tablight-glass {
+  height: 100px;
+  opacity: 0;
+  transform: translateY(10px) scale(.75) rotate(30deg);
+  transition: .45s ease-in-out;
+}
+
+.tablight-glass.appear {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.tablight-promo button {
+  margin: 15px 0;
+  padding: 8px 16px;
+  font-size: 16px;
+  background: none;
+  color: rgba(255,255,255,.85);
+  border: 2px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background .35s ease-out;
+}
+
+.tablight-promo button:hover {
+  background: rgba(255,255,255,.1);
+}
+
+.tablight-promo button:active {
+  background: rgba(0,0,0,.1);
+}
+
+.tablight-credit {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.tablight-credit h4 {
+  font-weight: 400;
+}

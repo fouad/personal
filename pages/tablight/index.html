@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>Tablight Search by Fouad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="chrome-webstore-item"
+    href="https://chrome.google.com/webstore/detail/clenlcdnkhcmilhodbibgldkmldgpboi">
+  <link rel="stylesheet" href="/assets/main.css">
+</head>
+<body class="tablight-background">
+  <div class="tablight-promo">
+    <img class="tablight-glass" src="/assets/magnifying.svg">
+    <h1>Tablight</h1>
+    <h4>Mac Spotlight search for Chrome Tabs</h4>
+    <button onclick="chrome.webstore.install()" id="install-button">Add to Chrome</button>
+  </div>
+  <div class="tablight-credit">
+    <h4>Made by</h4>
+    <a href="/">
+    <div class="img-avatar">
+      <img src="/assets/avatarC.png">
+      <img src="/assets/avatar.jpg" class="img-avatar-top">
+    </div>
+    </a>
+  </div>
+  <script>
+  if (chrome.app.isInstalled) {
+    document.getElementById('install-button').style.display = 'none';
+  }
+  </script>
+  <script>
+    setTimeout(function() {
+      var glass = document.querySelector('.tablight-glass');
+
+      glass.classList.add('appear');
+    }, 100);
+  </script>
+</body>
+</html>
